@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header nav a:hover {
+  background-color: #666;
+}
+
+header nav a.ativo {
+  background-color: #666;
+}
+
+main {
+  padding: 20px;
+  margin-top: 50px; /* Ajustar para a altura do header */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 300px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header nav a {
+    width: 100%;
+  }
+}
+section#contato ul li a {
+  padding-right: 10px;
+}
+
+section#contato ul li a::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+section#contato ul li a:nth-child(1)::before {
+  background-image: url("https://www.flaticon.com/free-icon/linkedin_174857");
+}
+
+section#contato ul li a:nth-child(2)::before {
+  background-image: url("https://www.flaticon.com/free-icon/github-logo_25231");
+}
+
+section#contato ul li a:nth-child(3)::before {
+  background-image: url("https://www.flaticon.com/br/icone-gratis/instagram_174855");
+}
+#formulario-contato {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#formulario-contato label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formulario-contato input,
+#formulario-contato textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+#formulario-contato button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#formulario-contato button:hover {
+  background-color: #333;
+}
+
+#mensagem-sucesso {
+  background-color: #cfc;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}

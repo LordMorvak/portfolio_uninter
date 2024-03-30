@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <a href="#home" class="ativo">Home</a>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <img src="background.jpg" alt="Imagem Home">
+        </section>
+        <section id="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <img src="foto.jpg" alt="Imagem Sobre Mim">
+            <p>...simplesmente eu!</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <img src="imagem-portfolio.jpg" alt="Imagem Portfolio">
+            <p>...em breve!</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <img src="imagem-contato.jpeg" alt="Imagem Contato">
+            <form id="formulario-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div id="mensagem-sucesso"
+                style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);">
+                <p>Enviado com sucesso!</p>
+            </div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/fabiojaqueiroz-devops/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/LordMorvak" target="_blank">GitHub</a></li>
+                <li><a href="https://www.instagram.com/morvaky/" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
